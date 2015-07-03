@@ -5,7 +5,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-     greeting = Greeting()
+    greeting = Greeting()
     greeting.save()
 
     greetings = Greeting.objects.all()
