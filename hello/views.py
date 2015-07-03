@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return render(request, 'unexpector-template.html', {'greetings': greetings})
+    newvalue = "new value"
+
+    return render(request, 'unexpector-template.html', {'greetings': newvalue})
 
 
 def db(request):
