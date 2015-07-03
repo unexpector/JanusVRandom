@@ -15,5 +15,5 @@ def db(request):
 
     greetings = Greeting.objects.all()
 
-    return render(request, 'unexpector-template.html', {'greetings': greetings})
+    return render(request, 'db.html', {'greetings': greetings})
 
