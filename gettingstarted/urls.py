@@ -15,11 +15,13 @@ urlpatterns = patterns('',
     url(r'^db', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^about', hello.views.about, name='about'),
-    if settings.DEBUG:
+
+
+)
+
+if settings.DEBUG:
     urlpatterns += patterns(
         'django.views.static',
         (r'^media/(?P<path>.*)',
         'serve',
         {'document_root': settings.MEDIA_ROOT}), )
-
-)
