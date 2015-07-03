@@ -19,6 +19,6 @@ def db(request):
     return render(request, 'db.html', {'greetings': greetings})
 
 def about(request):
-    pagetext = "<html><body> <a href="https://obscure-cliffs-2136.herokuapp.com/">Here is the link to the main page</a></body></html>"
+    pagetext = "<html><body> Here is the link to the main page</body></html>"
     return HttpResponse(pagetext)
 
