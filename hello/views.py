@@ -5,8 +5,6 @@ from django.contrib.auth import login as auth_login
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from .models import Greeting
-import requests
-
 
 
 # Create your views here.
