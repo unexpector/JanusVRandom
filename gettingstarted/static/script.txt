@@ -1,0 +1,57 @@
+var global_time_passed = 0;
+var clicks = 0;
+var newtext = "this is the new text";
+
+
+
+
+var myrandom=Math.round(Math.random()*39)
+var links=new Array()
+links[0]="http://en.blog.wordpress.com/next/"
+links[1]="http://en.wikipedia.org/wiki/Special:Random/User"
+links[2]="http://www.wikihow.com/Special:Randomizer"
+links[3]="http://en.wikipedia.org/wiki/Special:Random"
+links[4]="http://en.wikipedia.org/wiki/Special:RandomInCategory/Orphaned_articles"
+links[5]="http://www.fluidr.com/surprise"
+links[6]="http://www.youtuberandomvideo.com/"
+links[7]="http://en.wikipedia.org/wiki/Special:Random/Book"
+links[8]="http://www.mapcrunch.com/"
+links[9]="http://en.wiktionary.org/wiki/Special:Random"
+links[10]="http://en.wikipedia.org/wiki/Special:Random/TimedText"
+links[11]="http://thanland.com/projects/random-amazon/"
+links[12]="http://en.wikipedia.org/wiki/Special:RandomRedirect/Book"
+links[13]="http://digg.com/"
+links[14]="http://www.instructables.com/tag/type-id/?sort=RECENT"
+links[15]="http://en.wikipedia.org/wiki/Special:Random/Category"
+links[16]="http://en.wikipedia.org/wiki/Special:RandomRedirect/File"
+links[17]="http://en.reddit.com/r/all/"
+links[18]="http://en.wikipedia.org/wiki/Special:Randompage"
+links[19]="http://www.alphatecit.com/RandomFacebookProfile.html"
+links[20]="http://en.wikiversity.org/wiki/Special:RandomRootpage"
+links[21]="http://eflclassroom.com/tedtalks.html"
+links[22]="http://www.karnhuset.net/demos/spotify/randomSong/"
+links[23]="http://en.wikinews.org/wiki/Special:Random"
+links[24]="http://twitter.com"
+links[25]="https://github.com/explore?since=daily"
+links[26]="http://www.reddit.com/r/random"
+links[27]="http://www.mangle.ca/randomlj.php"
+links[28]="http://www.bookbookgoose.com/"
+links[29]="http://boingboing.net/"
+links[30]="http://www.cracked.com/"
+links[31]="http://imgur.com/"
+links[32]="http://en.wikipedia.org/wiki/Special:Random/File"
+links[33]="http://nesguide.com/random?TTMWnOPi"
+links[34]="http://www.stumbleupon.com/"
+links[35]="http://www.seventhsanctum.com/random.php"
+links[36]="http://netflixroulette.net/"
+links[37]="http://kice.me/randomebay/"
+links[38]="http://www.snopes.com/info/random/random.asp"
+links[39]="http://imgur.com/random"
+
+newurl = links[myrandom]
+
+room.onClick = function() {
+          print(links[myrandom]);
+	  print(newtext);
+
+};
