@@ -18,3 +18,6 @@ def db(request):
 
     return render(request, 'db.html', {'greetings': greetings})
 
+def about(request):
+
+    return HttpResponse("Steve says here is the about page.")
