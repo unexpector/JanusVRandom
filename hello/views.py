@@ -5,7 +5,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Hello from Python! Now Changed')
+    return render(request, 'unexpector-template.html', {'greetings': greetings})
 
 
 def db(request):
