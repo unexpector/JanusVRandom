@@ -5,8 +5,9 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     newvalue = "new value"
+    context_dict = {'boldmessage': "This is the bold message"}
 
-    return render(request, 'unexpector-template.html', {'greetings': newvalue})
+    return render(request, 'unexpector-template.html', context_dict)
 
 
 def db(request):
