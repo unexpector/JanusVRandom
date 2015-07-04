@@ -33,7 +33,7 @@ def populate():
     for p in RandomSites.objects.filter:
             print "- {0} - {1}".format(str(p))
 
-def add_randomsite(cat, title, url, views=0):
+def add_randomsite(sitename, src):
     p = RandomSites.objects.get_or_create(sitename=sitename, src=src)[0]
     p.save()
     return p
