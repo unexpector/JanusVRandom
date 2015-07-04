@@ -23,7 +23,7 @@ def populate():
     add_randomsite(sitename="Random Reddit",
         src="http://www.reddit.com/r/random")
 
-    add_randomsitesitename="Cracked",
+    add_randomsite="Cracked",
         src="http://www.cracked.com/")
 
     add_randomsite(sitename="Random Imgur",
