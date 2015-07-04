@@ -5,3 +5,6 @@ from hello.models import Rooms, RandomSites, ObjectLibrary
 admin.site.register(Rooms)
 admin.site.register(RandomSites)
 admin.site.register(ObjectLibrary)
+
+class RandomSitesAdmin(admin.ModelAdmin):
+    list_display = ('sitename', 'src')
