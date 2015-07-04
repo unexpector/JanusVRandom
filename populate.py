@@ -1,10 +1,7 @@
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gettingstarted.settings')
 
-import django
-django.setup()
-
-from hello.models import Rooms, RandomSites, ObjectLibrary
+from hello.models import RandomSites
 
 
 def populate():
