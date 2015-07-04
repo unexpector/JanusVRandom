@@ -38,7 +38,7 @@ def populate():
 
 def add_randomsite(cat, title, url, views=0):
     p = RandomSites.objects.get_or_create(sitename=sitename, src=src)[0]
-        p.save()
+    p.save()
     return p
 
 # Start execution here!
