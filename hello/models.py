@@ -14,6 +14,8 @@ class ObjectLibrary(models.Model):
     idseed = models.CharField(max_length=128, unique=True)
     src = models.URLField()
     texsrc = models.URLField()
+    class Meta:
+        verbose_name_plural = "ObjectLibraries"
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
         return self.objectname
