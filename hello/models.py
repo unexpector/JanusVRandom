@@ -23,6 +23,8 @@ class ObjectLibrary(models.Model):
 class RandomSites(models.Model):
     sitename = models.CharField(max_length=128, unique=True)
     src = models.URLField()
+    class Meta:
+        verbose_name_plural = "RandomSites"
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
         return self.sitename
