@@ -16,12 +16,12 @@ class ObjectLibrary(models.Model):
     texsrc = models.URLField()
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
-        return self.name
+        return self.objectname
 
 class RandomSites(models.Model):
     sitename = models.CharField(max_length=128, unique=True)
     src = models.URLField()
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
-        return self.name
+        return self.sitename
 

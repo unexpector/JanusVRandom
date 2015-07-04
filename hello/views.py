@@ -13,7 +13,7 @@ def index(request):
 def db(request):
 
     greetings = "hello"
-    
+
     return render(request, 'db.html', {'greetings': greetings})
 
 def about(request):
