@@ -30,7 +30,7 @@ def populate():
         src="http://www.karnhuset.net/demos/spotify/randomSong/")
 
     # Print out what we have added to the user.
-    for p in RandomSites.objects.filter:
+    for p in RandomSites.objects.all():
             print "- {0} - {1}".format(str(p))
 
 def add_randomsite(sitename, src):
