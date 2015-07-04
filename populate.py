@@ -31,7 +31,7 @@ def populate():
 
     # Print out what we have added to the user.
     for p in RandomSites.objects.all():
-            print "- {0} - {1}".format(str(p))
+            print "- {0} - {1}".format(str(p), str(p))
 
 def add_randomsite(sitename, src):
     p = RandomSites.objects.get_or_create(sitename=sitename, src=src)[0]
