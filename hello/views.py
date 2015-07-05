@@ -5,7 +5,8 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     newvalue = "new value"
-    context_dict = {'boldmessage': "This is the bold message"}
+    random_list = RandomSites.objects.order_by('src')
+    context_dict = {'boldmessage': random_list}
 
     return render(request, 'unexpector-template.html', context_dict)
 
