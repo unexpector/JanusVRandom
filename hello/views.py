@@ -6,7 +6,7 @@ from hello.models import RandomSites, ObjectLibrary, Rooms
 # Create your views here.
 def index(request):
     newvalue = "new value"
-    random_list = RandomSites.objects.get(sitename__exact="Twitter"))
+    random_list = RandomSites.objects.get(sitename__exact="Twitter")
     context_dict = {'boldmessage': random_list}
 
     return render(request, 'unexpector-template.html', context_dict)
