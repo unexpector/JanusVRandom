@@ -7,7 +7,7 @@ from hello.models import RandomSites, ObjectLibrary, Rooms
 def index(request):
     newvalue = "new value"
     namepicked = "Random Imgur"
-    reddit="Random  Reddit"
+    reddit="Random Reddit"
     random_list = RandomSites.objects.get(sitename=namepicked).src
     randomreddit = RandomSites.objects.get(sitename=reddit).src
     context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit}
