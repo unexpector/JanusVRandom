@@ -9,7 +9,7 @@
 <body>
 Welcome to Unexpector - Update
 {{ boldmessage }}
-{{ randomreddit }}
+
 
 <FireBoxRoom>
 <Assets>
@@ -17,7 +17,7 @@ Welcome to Unexpector - Update
 <AssetObject id="plane" src="https://beta.vrsites.com/files/unexpector/plane.obj" />
 
 <AssetScript src="{% static "script.txt" %}" />
-<AssetWebSurface id="webpage_id2" src="http://www.reddit.com/r/random" width="960" height="540" />
+<AssetWebSurface id="webpage_id2" src="{{ randomreddit }}" width="960" height="540" />
 <AssetWebSurface id="webpage_id" src="http://en.wikipedia.org/wiki/Special:Random" width="960" height="540" />
 <AssetWebSurface id="webpage_id3" src="{{ boldmessage }}" width="960" height="540" />
 </Assets>
