@@ -7,7 +7,8 @@ from hello.models import RandomSites, ObjectLibrary, Rooms
 def index(request):
     newvalue = "new value"
     random_list = RandomSites.objects.order_by('src')
-    context_dict = {'boldmessage': random_list}
+    random_output = random_list(sitename="Twitter")
+    context_dict = {'boldmessage': random_output}
 
     return render(request, 'unexpector-template.html', context_dict)
 
