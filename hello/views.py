@@ -8,9 +8,11 @@ def index(request):
     newvalue = "new value"
     namepicked = "Random Imgur"
     reddit="Random Reddit"
+    wikipedia="Random Wikipedia"
     random_list = RandomSites.objects.get(sitename=namepicked).src
     randomreddit = RandomSites.objects.get(sitename=reddit).src
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit}
+    randomwikipedia = RandomSites.objects.get(sitename=wikipedia).src
+    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia}
 
     return render(request, 'unexpector-template.html', context_dict)
 
