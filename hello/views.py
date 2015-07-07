@@ -12,7 +12,7 @@ def index(request):
     random_list = RandomSites.objects.get(sitename=namepicked).src
     randomreddit = RandomSites.objects.get(sitename=reddit).src
     randomwikipedia = RandomSites.objects.get(sitename=wikipedia).src
-    thenumbeer = randit(1, 10)
+    thenumbeer = randint(1, 10)
     context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumbeer}
 
     return render(request, 'unexpector-template.html', context_dict)
