@@ -6,7 +6,7 @@ from hello.models import RandomSites, ObjectLibrary, Rooms
 # Create your views here.
 def index(request):
     newvalue = "new value"
-    namepicked = "Twitter"
+    namepicked = "twitter"
     random_list = RandomSites.objects.all().filter(sitename=namepicked).order_by('src')
     context_dict = {'boldmessage': random_list}
 
