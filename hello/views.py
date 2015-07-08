@@ -15,7 +15,7 @@ def index(request):
     random_model ="Subwoofer"
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
     context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel }
-
+    context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
 
