@@ -13,7 +13,9 @@ def index(request):
     randomreddit = RandomSites.objects.get(sitename=reddit).src
     randomwikipedia = RandomSites.objects.get(sitename=wikipedia).src
     thenumber = randint(1, 10)
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber}
+    random_model ="Subwoofer"
+    themodel = ObjectLibraries.objects.get(Objectname=random_model).src
+    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel }
 
     return render(request, 'unexpector-template.html', context_dict)
 
