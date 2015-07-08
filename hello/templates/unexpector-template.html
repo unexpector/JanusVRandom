@@ -16,7 +16,7 @@ Welcome to Unexpector - Update
 <Assets>
 <AssetObject id="moon_obj" src="http://vrsites.com/assets/moon.obj" tex0="http://vrsites.com/assets/earth1.jpg" />
 <AssetObject id="plane" src="https://beta.vrsites.com/files/unexpector/plane.obj" />
-<AssetObject id="subwoofer" src={% static "{{ themodel }}" %} tex0="http://vrsites.com/assets/earth1.jpg" />
+<AssetObject id="subwoofer" src={% static {{ themodel }} %} tex0="http://vrsites.com/assets/earth1.jpg" />
 <AssetScript src="{% static "script.txt" %}" />
 <AssetWebSurface id="webpage_id2" src="{{ randomreddit }}" width="960" height="540" />
 <AssetWebSurface id="webpage_id" src="{{ randomwikipedia }}" width="960" height="540" />
