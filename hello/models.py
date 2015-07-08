@@ -13,7 +13,7 @@ class ObjectLibrary(models.Model):
     objectname = models.CharField(max_length=128, unique=True)
     idseed = models.CharField(max_length=128, unique=True)
     src = models.CharField(max_length=128)
-    texsrc = models.CharField(max_length=128
+    texsrc = models.CharField(max_length=128)
     class Meta:
         verbose_name_plural = "ObjectLibraries"
 
