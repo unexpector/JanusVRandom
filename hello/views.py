@@ -34,7 +34,7 @@ def about(request):
 
 def category(request, site_name_slug):
 
-    ontext_dict = {}
+    context_dict = {}
 
     try:
         # Can we find a category name slug with the given name?
