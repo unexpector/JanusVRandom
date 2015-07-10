@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     url(r'^db', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^about', hello.views.about, name='about'),
+    url(r'^slugpage', hello.views.about, name='slugpage'),
 
 
 )
