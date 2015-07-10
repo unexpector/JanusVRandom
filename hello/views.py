@@ -45,7 +45,7 @@ def category(request, site_name_slug):
 
         # Retrieve all of the associated pages.
         # Note that filter returns >= 1 model instance.
-        url = RandomSites.objects.filter(sitename=site)
+        url = RandomSites.objects.get(sitename=site).src
 
         # Adds our results list to the template context under name pages.
         context_dict['src'] = url
