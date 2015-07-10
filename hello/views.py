@@ -29,5 +29,6 @@ def db(request):
 
 def about(request):
     pagetext = "<html><body> Here is the link to the main page</body></html>"
+
     return HttpResponse(pagetext)
 
