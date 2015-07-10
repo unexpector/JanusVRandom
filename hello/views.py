@@ -32,3 +32,30 @@ def about(request):
 
     return HttpResponse(pagetext)
 
+def category(request, category_name_slug):
+
+    ontext_dict = {}
+
+    try:
+        # Can we find a category name slug with the given name?
+        # If we can't, the .get() method raises a DoesNotExist exception.
+        # So the .get() method returns one model instance or raises an exception.
+        site = RandomSites.objects.get(slug=site_name_slug)
+        context_dict['site_name'] = RandomSites.sitename
+
+        # Retrieve all of the associated pages.
+        # Note that filter returns >= 1 model instance.
+        url = RandomSites.objects.filter(category=site)
+
+        # Adds our results list to the template context under name pages.
+        context_dict['src'] = url
+        # We also add the category object from the database to the context dictionary.
+        # We'll use this in the template to verify that the category exists.
+        context_dict['sitename'] = site
+    except Category.DoesNotExist:
+        # We get here if we didn't find the specified category.
+        # Don't do anything - the template displays the "no category" message for us.
+        pass
+
+    # Go render the response and return it to the client.
+    return render(request, 'showsites.html', context_dict)
