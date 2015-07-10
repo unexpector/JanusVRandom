@@ -32,7 +32,7 @@ def about(request):
 
     return HttpResponse(pagetext)
 
-def category(request, category_name_slug):
+def category(request, site_name_slug):
 
     ontext_dict = {}
 
@@ -52,7 +52,7 @@ def category(request, category_name_slug):
         # We also add the category object from the database to the context dictionary.
         # We'll use this in the template to verify that the category exists.
         context_dict['sitename'] = site
-    except Category.DoesNotExist:
+    except RandomSites.DoesNotExist:
         # We get here if we didn't find the specified category.
         # Don't do anything - the template displays the "no category" message for us.
         pass
