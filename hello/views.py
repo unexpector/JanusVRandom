@@ -8,6 +8,9 @@ def index(request):
     namepicked = "Random Imgur"
     reddit="Random Reddit"
     wikipedia="Random Wikipedia"
+    input_url = RandomSites.objects.get(slug=sitename_slug).src
+    context_dict['page_name'] =
+
     random_list = RandomSites.objects.get(sitename=namepicked).src
     randomreddit = RandomSites.objects.get(sitename=reddit).src
     randomwikipedia = RandomSites.objects.get(sitename=wikipedia).src
