@@ -40,7 +40,7 @@ def category(request, site_name_slug):
         # Can we find a category name slug with the given name?
         # If we can't, the .get() method raises a DoesNotExist exception.
         # So the .get() method returns one model instance or raises an exception.
-        site = RandomSites.objects.get(slug=site_name_slug)
+        site = RandomSites.objects.get(sitename=site_name_slug)
         context_dict['site_name'] = RandomSites.sitename
 
         # Retrieve all of the associated pages.
