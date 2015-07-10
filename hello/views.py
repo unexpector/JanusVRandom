@@ -41,7 +41,7 @@ def category(request, site_name_slug):
         # If we can't, the .get() method raises a DoesNotExist exception.
         # So the .get() method returns one model instance or raises an exception.
         site = RandomSites.objects.get(sitename=site_name_slug)
-        context_dict['site_name'] = RandomSites.sitename
+        context_dict['site_name'] = site
 
         # Retrieve all of the associated pages.
         # Note that filter returns >= 1 model instance.
