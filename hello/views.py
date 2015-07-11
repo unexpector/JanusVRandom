@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
+from hello.forms import ObjectForm
 
 # Create your views here.
 def index(request):
@@ -59,3 +60,27 @@ def category(request, site_name_slug):
 
     # Go render the response and return it to the client.
     return render(request, 'showsites.html', context_dict)
+
+def add_object(request):
+    # A HTTP POST?
+    if request.method == 'POST':
+        form = ObjectForm(request.POST)
+
+        # Have we been provided with a valid form?
+        if form.is_valid():
+            # Save the new category to the database.
+            form.save(commit=True)
+
+            # Now call the index() view.
+            # The user will be shown the homepage.
+            return index(request)
+        else:
+            # The supplied form contained errors - just print them to the terminal.
+            print form.errors
+    else:
+        # If the request was not a POST, display the form to enter details.
+        form = ObjectForm()
+
+    # Bad form (or form details), no form supplied...
+    # Render the form with error messages (if any).
+    return render(request, 'add_forms.html', {'form': form})
