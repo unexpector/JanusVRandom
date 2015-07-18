@@ -15,9 +15,11 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 10)
     fullrandom = RandomSites.objects.get(id=thenumber).src
+    roomrandom - randint(1,16)
+    random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom }
+    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom. 'random_room': randomroom }
     context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
