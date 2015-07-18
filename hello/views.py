@@ -15,7 +15,7 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 10)
     fullrandom = RandomSites.objects.get(id=thenumber).src
-    roomrandom - randint(1,16)
+    roomrandom = randint(1,16)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
