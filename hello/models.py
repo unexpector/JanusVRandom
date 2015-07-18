@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Rooms(models.Model):
     name = models.CharField(max_length=128, unique=True)
-    localasset = models.URLField()
+    localasset = models.CharField(max_length=128)
     col = models.CharField(max_length=128)
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
