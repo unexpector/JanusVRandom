@@ -13,7 +13,7 @@ def index(request):
     randomreddit = RandomSites.objects.get(sitename=reddit).src
     randomwikipedia = RandomSites.objects.get(sitename=wikipedia).src
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
-    thenumber = randint(1, 10)
+    thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
 
     roomrandom = randint(1, 14)
