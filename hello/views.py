@@ -17,11 +17,12 @@ def index(request):
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
     newarray = np.array([2,3,1])
+    x_dimension = newarray.item[2]
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room }
+    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension }
     context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
