@@ -16,7 +16,7 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
-    newarray = np.array([2,3,1])
+    newarray = array([2,3,1])
     x_dimension = newarray.item[2]
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
