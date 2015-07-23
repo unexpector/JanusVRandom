@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
 from hello.forms import ObjectForm
+from numpy import array
 
 # Create your views here.
 def index(request):
