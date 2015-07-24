@@ -17,7 +17,7 @@ def index(request):
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
     newarray = [2,3,1]
-    x_dimension = newarray[2]
+    x_dimension = newarray[1]
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
