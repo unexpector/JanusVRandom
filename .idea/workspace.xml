@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea22325-213f-400e-a9ae-ff9626f7e04d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/templates/unexpector-template.html" afterPath="$PROJECT_DIR$/hello/templates/unexpector-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/views.py" afterPath="$PROJECT_DIR$/hello/views.py" />
     </list>
     <ignored path="JanusVRandom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,8 +103,8 @@
       <file leaf-file-name="unexpector-template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40113637" vertical-offset="4" max-vertical-offset="918">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.8068182" vertical-offset="4" max-vertical-offset="935">
+              <caret line="42" column="190" selection-start-line="42" selection-start-column="190" selection-end-line="42" selection-end-column="190" />
               <folding />
             </state>
           </provider>
@@ -906,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40113637" vertical-offset="4" max-vertical-offset="918">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.8068182" vertical-offset="4" max-vertical-offset="935">
+          <caret line="42" column="190" selection-start-line="42" selection-start-column="190" selection-end-line="42" selection-end-column="190" />
           <folding />
         </state>
       </provider>
