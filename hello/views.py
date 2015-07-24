@@ -16,7 +16,7 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
-    newarray = [5.0,1.0,-10.0]
+    newarray = [5.0,1.0,-3.0]
     x_dimension = newarray[0]
     y_dimension = newarray[1]
     z_dimension = newarray[2]
