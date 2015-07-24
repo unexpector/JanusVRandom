@@ -16,10 +16,15 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
-    newarray = [5.0,1.0,-3.0]
+    randx = randint(-2, 5)
+    randy = 1
+    randz = randint(-10,-1)
+    newarray = [randx,randy,randz]
+    #Set Dimensions
     x_dimension = newarray[0]
     y_dimension = newarray[1]
     z_dimension = newarray[2]
+    #Room Random Code
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
