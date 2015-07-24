@@ -103,8 +103,8 @@
       <file leaf-file-name="unexpector-template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8068182" vertical-offset="4" max-vertical-offset="935">
-              <caret line="42" column="190" selection-start-line="42" selection-start-column="190" selection-end-line="42" selection-end-column="190" />
+            <state vertical-scroll-proportion="0.32386363" vertical-offset="4" max-vertical-offset="935">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -905,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8068182" vertical-offset="4" max-vertical-offset="935">
-          <caret line="42" column="190" selection-start-line="42" selection-start-column="190" selection-end-line="42" selection-end-column="190" />
+        <state vertical-scroll-proportion="0.32386363" vertical-offset="4" max-vertical-offset="935">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
