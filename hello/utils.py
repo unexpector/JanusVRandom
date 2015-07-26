@@ -17,7 +17,7 @@ def newobject(name):
     setz = randint(-10,-1)
     objlocation = [setx,sety,setz]
     #Set Dimensions
-    objx = objlocation[0]
-    objy = objlocation[1]
-    objz = objlocation[2]
+    newobjx = objlocation[0]
+    newobjy = objlocation[1]
+    newobjz = objlocation[2]
     return newobjx,newobjy,newobjz
