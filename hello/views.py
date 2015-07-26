@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
 from hello.forms import ObjectForm
+from hello.utils import newobject
+
 from numpy import array
 
 # Create your views here.
@@ -35,7 +37,7 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
 
-    newobject(steve)
+
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
     context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension, 'newobjx': objx }
@@ -43,27 +45,7 @@ def index(request):
     return render(request, 'unexpector-template.html', context_dict)
 
 
-class item(object):
-    def createitem(self):
-        setx = randint(-2, 5)
-        sety = 1
-        setz = randint(-10,-1)
-        objlocation = [setx,sety,setz]
-        #Set Dimensions
-        objx = objlocation[0]
-        objy = objlocation[1]
-        objz = objlocation[2]
 
-def newobject(name):
-    setx = randint(-2, 5)
-    sety = 1
-    setz = randint(-10,-1)
-    objlocation = [setx,sety,setz]
-    #Set Dimensions
-    objx = objlocation[0]
-    objy = objlocation[1]
-    objz = objlocation[2]
-    return objx,objy,objz
 
 def db(request):
 
