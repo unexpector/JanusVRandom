@@ -1,3 +1,5 @@
+from random import randint
+
 class item(object):
     def createitem(self):
         setx = randint(-2, 5)
