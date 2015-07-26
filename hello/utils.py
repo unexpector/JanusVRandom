@@ -11,7 +11,7 @@ class item(object):
         objy = objlocation[1]
         objz = objlocation[2]
 
-def newobject(name):
+def newobject():
     setx = randint(-2, 5)
     sety = 1
     setz = randint(-10,-1)
