@@ -16,14 +16,20 @@ def index(request):
     wikipedia_id=  RandomSites.objects.get(sitename=wikipedia).id
     thenumber = randint(1, 26)
     fullrandom = RandomSites.objects.get(id=thenumber).src
+
+    #Set Number Of Cubes
+    #cubeamount = randint(1,4)
+    #for each in cubeamount
+
+
     randx = randint(-2, 5)
     randy = 1
     randz = randint(-10,-1)
-    newarray = [randx,randy,randz]
+    cubearray = [randx,randy,randz]
     #Set Dimensions
-    x_dimension = newarray[0]
-    y_dimension = newarray[1]
-    z_dimension = newarray[2]
+    x_dimension = cubearray[0]
+    y_dimension = cubearray[1]
+    z_dimension = cubearray[2]
     #Room Random Code
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
@@ -33,6 +39,26 @@ def index(request):
     context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
+class item(object):
+    def createitem(self):
+        setx = randint(-2, 5)
+        sety = 1
+        setz = randint(-10,-1)
+        objlocation = [setx,sety,setz]
+        #Set Dimensions
+        objx = objlocation[0]
+        objy = objlocation[1]
+        objz = objlocation[2]
+
+def newobject(name)
+    setx = randint(-2, 5)
+    sety = 1
+    setz = randint(-10,-1)
+    objlocation = [setx,sety,setz]
+    #Set Dimensions
+    objx = objlocation[0]
+    objy = objlocation[1]
+    objz = objlocation[2]
 
 def db(request):
 
