@@ -36,7 +36,7 @@ def index(request):
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
-    newobjx = 2
+    newobjx = []
     newobject()
 
 
