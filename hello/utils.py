@@ -20,4 +20,4 @@ def newobject():
     newobjx = objlocation[0]
     newobjy = objlocation[1]
     newobjz = objlocation[2]
-    return newobjx, newobjy
+    return newobjx, newobjy, newobjz
