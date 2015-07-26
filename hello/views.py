@@ -37,7 +37,7 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
     objx = 2
-
+    newobject("new")
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
