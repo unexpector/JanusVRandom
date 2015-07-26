@@ -34,8 +34,11 @@ def index(request):
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
+
+    newobject(steve)
+
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension }
+    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension. 'objx': objx }
     context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
@@ -60,6 +63,7 @@ def newobject(name):
     objx = objlocation[0]
     objy = objlocation[1]
     objz = objlocation[2]
+    return objx,objy,objz
 
 def db(request):
 
