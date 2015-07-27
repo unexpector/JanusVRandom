@@ -29,7 +29,7 @@ def index(request):
     randz = randint(-10,-1)
     cubearray = [randx,randy,randz]
     #Set Dimensions
-    x_dimension = cubearray[0]
+    x_dimension =
     y_dimension = cubearray[1]
     z_dimension = cubearray[2]
     #Room Random Code
@@ -38,7 +38,7 @@ def index(request):
     random_model ="Subwoofer"
     newx, newy, newz = newobject()
     thecube = makeobject('my cube')
-    thecube.setcords(4,7,8)
+    thecube.setcords(cubearray[0],cubearray[0],8)
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src

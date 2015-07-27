@@ -16,6 +16,16 @@ class makeobject(object):
         self.newobjy = ypos
         self.newobjz = zpos
 
+    def randcords(self):
+    setx = randint(-2, 5)
+    sety = 1
+    setz = randint(-10,-1)
+    objlocation = [setx,sety,setz]
+    #Set Dimensions
+    self.newobjx = objlocation[0]
+    self.newobjy = objlocation[1]
+    self.newobjz = objlocation[2]
+
 
 def newobject():
     setx = randint(-2, 5)
