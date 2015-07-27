@@ -29,7 +29,7 @@ def index(request):
     randz = randint(-10,-1)
     cubearray = [randx,randy,randz]
     #Set Dimensions
-    x_dimension =
+    x_dimension = cubearray[0]
     y_dimension = cubearray[1]
     z_dimension = cubearray[2]
     #Room Random Code
