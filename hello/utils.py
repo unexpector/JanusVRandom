@@ -8,6 +8,12 @@ class makeobject(object):
     def add_co_ords(self, location):
         self.position.append(location)
 
+    def setcords(self, xpos,ypos,zpos):
+        newobjx = xpos
+        newobjy = ypos
+        newobjz = zpos
+
+
 def newobject():
     setx = randint(-2, 5)
     sety = 1
