@@ -38,6 +38,7 @@ def index(request):
     random_model ="Subwoofer"
     newx, newy, newz = newobject()
     thecube = makeobject('my cube')
+    thecube.add_co_ords(3,1,4)
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
