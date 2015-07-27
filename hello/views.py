@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
 from hello.forms import ObjectForm
-from hello.utils import newobject
+from hello.utils import newobject, makeobject
 
 from numpy import array
 
@@ -37,10 +37,12 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
     newx, newy, newz = newobject()
+    thecube = makeobject('my cube')
+    thecube.setcords(33,3,8)
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': random_list, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension, 'newobjx': newy }
+    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension, 'newobjx': newy }
     context_dict['page_name'] = "this is the page name"
     return render(request, 'unexpector-template.html', context_dict)
 
