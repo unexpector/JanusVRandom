@@ -4,6 +4,9 @@ class makeobject(object):
     def __init__(self, name):
         self.name = name
         self.position = []    # creates a new location list
+        self.newobjx = 1
+        self.newobjy= 1
+        self.newobjz= 1
 
     def add_co_ords(self, location):
         self.position.append(location)
