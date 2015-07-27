@@ -12,9 +12,9 @@ class makeobject(object):
         self.position.append(location)
 
     def setcords(self, xpos,ypos,zpos):
-        newobjx = xpos
-        newobjy = ypos
-        newobjz = zpos
+        self.newobjx = xpos
+        self.newobjy = ypos
+        self.newobjz = zpos
 
 
 def newobject():
