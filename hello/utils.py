@@ -1,6 +1,6 @@
 from random import randint
 
-class createobject(object):
+class makeobject(object):
     def __init__(self, name):
         self.name = name
         self.position = []    # creates a new location list
