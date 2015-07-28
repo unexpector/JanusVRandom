@@ -25,6 +25,7 @@ class makeobject(object):
         self.newobjx = objlocation[0]
         self.newobjy = objlocation[1]
         self.newobjz = objlocation[2]
+        context_dict.update({'newvalue': self.newobjx})
 
 
 def newobject():

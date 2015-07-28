@@ -42,8 +42,9 @@ def index(request):
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': x_dimension, 'yvalue': y_dimension, 'zvalue': z_dimension, 'newobjx': newy }
+    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': thecube.newobjx, 'yvalue': thecube.newobjy, 'zvalue': thecube.newobjz, 'newobjx': newy }
     context_dict['page_name'] = "this is the page name"
+    #context_dict.update({'newvalue': thecube.newobjx})
     return render(request, 'unexpector-template.html', context_dict)
 
 
