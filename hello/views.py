@@ -24,25 +24,17 @@ def index(request):
     #for each in cubeamount
 
 
-    randx = randint(-2, 5)
-    randy = 1
-    randz = randint(-10,-1)
-    cubearray = [randx,randy,randz]
-    #Set Dimensions
-    x_dimension = cubearray[0]
-    y_dimension = cubearray[1]
-    z_dimension = cubearray[2]
     #Room Random Code
     roomrandom = randint(1, 14)
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
-    newx, newy, newz = newobject()
-    thecube = makeobject('my cube')
+
+    thecube = makeobject('mycube')
     thecube.randcords()
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': thecube.newobjx, 'yvalue': thecube.newobjy, 'zvalue': thecube.newobjz, 'newobjx': newy }
+    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': thecube.newobjx, 'yvalue': thecube.newobjy, 'zvalue': thecube.newobjz,}
     context_dict['page_name'] = "this is the page name"
     #context_dict.update({'newvalue': thecube.newobjx})
     thecube.addtodict(context_dict)
