@@ -29,12 +29,16 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
 
-    object_one = makeobject('mycube')
+    object_one = makeobject('onecube')
     object_one.randcords()
+    object_two = makeobject('twocube')
+    object_two.randcords()
+    object_three = makeobject('threecube')
+    object_three.randcords()
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': object_one.newobjx, 'yvalue': object_one.newobjy, 'zvalue': object_one.newobjz,}
+    context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'one_xvalue': object_one.newobjx, 'one_yvalue': object_one.newobjy, 'one_zvalue': object_one.newobjz,}
     context_dict['page_name'] = "this is the page name"
     #context_dict.update({'newvalue': thecube.newobjx})
     object_one.addtodict(context_dict)
