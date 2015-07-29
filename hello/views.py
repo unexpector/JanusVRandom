@@ -42,6 +42,8 @@ def index(request):
     context_dict['page_name'] = "this is the page name"
     #context_dict.update({'newvalue': thecube.newobjx})
     object_one.addtodict(context_dict)
+    object_two.addtodict(context_dict)
+    object_three.addtodict(context_dict)
     context_dict['xname'] = object_one.xname
     return render(request, 'unexpector-template.html', context_dict)
 
