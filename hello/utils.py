@@ -27,10 +27,10 @@ class makeobject(object):
         self.newobjz = objlocation[2]
 
     def addtodict(self, dictionary):
-        xvar = "x"
-        yvar = "y"
-        zvar = "Z"
-        xname = self.name + xvar
+        self.xvar = "x"
+        self.yvar = "y"
+        self.zvar = "Z"
+        self.xname = self.name + xvar
         updatedict = dictionary.update({xname: self.newobjx})
 
         return updatedict, xname
