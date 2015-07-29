@@ -38,7 +38,7 @@ class makeobject(object):
         zdict = {self.zname: self.newobjz}
         xdict.update(ydict)
         xdict.update(zdict)
-        updatedict = dictionary.update(xdict)
+        updatedict = dictionary.update(ydict)
 
         return updatedict, self.xname
 
