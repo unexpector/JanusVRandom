@@ -26,9 +26,8 @@ class makeobject(object):
         self.newobjy = objlocation[1]
         self.newobjz = objlocation[2]
 
-    def addtodict(self):
-        global context_dict
-        updatedict = context_dict.update({'newvalue': self.newobjx})
+    def addtodict(self, dictionary):
+        updatedict = dictionary.update({'newvalue': self.newobjx})
         return updatedict
 
 
