@@ -29,11 +29,11 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
 
-    object_one = makeobject('onecube')
+    object_one = makeobject('object_one')
     object_one.randcords()
-    object_two = makeobject('twocube')
+    object_two = makeobject('object_two')
     object_two.randcords()
-    object_three = makeobject('threecube')
+    object_three = makeobject('object_three')
     object_three.randcords()
 
 
