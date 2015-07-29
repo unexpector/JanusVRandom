@@ -29,15 +29,15 @@ def index(request):
     random_room = Rooms.objects.get(id=roomrandom).localasset
     random_model ="Subwoofer"
 
-    thecube = makeobject('mycube')
-    thecube.randcords()
+    object_one = makeobject('mycube')
+    object_one.randcords()
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': thecube.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': thecube.newobjx, 'yvalue': thecube.newobjy, 'zvalue': thecube.newobjz,}
+    context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'xvalue': object_one.newobjx, 'yvalue': object_one.newobjy, 'zvalue': object_one.newobjz,}
     context_dict['page_name'] = "this is the page name"
     #context_dict.update({'newvalue': thecube.newobjx})
-    thecube.addtodict(context_dict)
+    object_one.addtodict(context_dict)
     return render(request, 'unexpector-template.html', context_dict)
 
 
