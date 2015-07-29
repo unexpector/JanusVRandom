@@ -27,7 +27,7 @@ class makeobject(object):
         self.newobjz = objlocation[2]
 
     def addtodict(self, dictionary):
-        updatedict = dictionary.update({self.name + 'x': self.newobjx})
+        updatedict = dictionary.update({self.name + 'x': self.newobjx}) + dictionary.update({self.name + 'y': self.newobjy})
         return updatedict
 
 
