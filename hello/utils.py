@@ -29,7 +29,7 @@ class makeobject(object):
     def addtodict(self, dictionary):
         self.xvar = "x"
         self.yvar = "y"
-        self.zvar = "Z"
+        self.zvar = "z"
         self.xname = self.name + self.xvar
         self.yname = self.name + self.yvar
         self.zname = self.name + self.zvar
