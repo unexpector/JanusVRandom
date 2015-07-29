@@ -33,7 +33,7 @@ class makeobject(object):
         self.xname = self.name + self.xvar
         updatedict = dictionary.update({self.xname: self.newobjx})
 
-        return updatedict, xname
+        return updatedict, self.xname
 
 
 def newobject():
