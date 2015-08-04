@@ -4,7 +4,7 @@ from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
 from hello.forms import ObjectForm
 from hello.utils import newobject, makeobject
-
+import scrapy
 from numpy import array
 
 # Create your views here.
