@@ -47,6 +47,7 @@ def index(request):
     context_dict['xname'] = object_one.xname
     return render(request, 'unexpector-template.html', context_dict)
     imgur1 = imgur(imgurone)
+    imgurone.takeinput()
 
 
 
