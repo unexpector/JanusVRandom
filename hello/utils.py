@@ -48,7 +48,7 @@ class makeobject(object):
 
 class imgur(object):
     def __init__(self, name):
-    self.name = name
+        self.name = name
 
 
     def takeinput(self,jsontest):
