@@ -5,7 +5,7 @@ class DmozItem(scrapy.Item):
     title = scrapy.Field()
     link = scrapy.Field()
     desc = scrapy.Field()
-    
+
 class makeobject(object):
     def __init__(self, name):
         self.name = name
@@ -44,6 +44,15 @@ class makeobject(object):
         updatedict = dictionary.update(xdict)
 
         return updatedict, self.xname
+
+class imgur(object):
+    def __init__(self, name):
+        self.name = name
+
+    def takeinput(self):
+        json1_file = open('https://api.imgur.com/3/gallery/random/random/1')
+        json1_str = json1_file.read()
+        json1_data = json.loads(json1_str)[0]
 
 
 def newobject():
