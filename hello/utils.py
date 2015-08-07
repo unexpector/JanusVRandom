@@ -1,5 +1,4 @@
 from random import randint
-import scrapy
 import json
 
 class DmozItem(scrapy.Item):
