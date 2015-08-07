@@ -47,7 +47,8 @@ class makeobject(object):
 
 class imgur(object):
     def __init__(self, name):
-        self.name = name
+    self.name = name
+
 
     def takeinput(self):
         json1_file = open('https://api.imgur.com/3/gallery/random/random/1')

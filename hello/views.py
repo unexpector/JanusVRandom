@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from hello.models import RandomSites, ObjectLibrary, Rooms
 from random import randint
 from hello.forms import ObjectForm
-from hello.utils import newobject, makeobject
+from hello.utils import newobject, makeobject, imgur
 import scrapy
 from numpy import array
 
@@ -46,7 +46,7 @@ def index(request):
     object_three.addtodict(context_dict)
     context_dict['xname'] = object_one.xname
     return render(request, 'unexpector-template.html', context_dict)
-
+    imgur1 = imgur(imgurone)
 
 
 
