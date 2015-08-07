@@ -1,11 +1,6 @@
 from random import randint
 import json
 
-class DmozItem(scrapy.Item):
-    title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
-
 class makeobject(object):
     def __init__(self, name):
         self.name = name
