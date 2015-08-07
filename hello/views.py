@@ -36,6 +36,9 @@ def index(request):
     object_three = makeobject('object_three')
     object_three.randcords()
 
+    imgur1 = imgur(imgurone)
+    imgurone.takeinput()
+    
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
     context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'one_xvalue': object_one.newobjx, 'one_yvalue': object_one.newobjy, 'one_zvalue': object_one.newobjz}
@@ -46,8 +49,7 @@ def index(request):
     object_three.addtodict(context_dict)
     context_dict['xname'] = object_one.xname
     return render(request, 'unexpector-template.html', context_dict)
-    imgur1 = imgur(imgurone)
-    imgurone.takeinput()
+
 
 
 
