@@ -35,9 +35,10 @@ def index(request):
     object_three = makeobject('object_three')
     object_three.randcords()
 
-    jsontest = []
+
     imgurone = imgur('imgurone')
-    imgurone.takeinput(jsontest)
+    imgurone.takeinput()
+
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src

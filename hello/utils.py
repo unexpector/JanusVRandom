@@ -47,12 +47,18 @@ class imgur(object):
         self.name = name
 
 
-    def takeinput(self, jsontest):
+    def takeinput(self):
+        clientID = 9aa094141cc554a
         json1_file = urllib2.urlopen('https://api.imgur.com/3/gallery/random/random/1')
-        json1_str = json1_file.read()
-        json1_data = json.loads(json1_str)[0]
-        jsontest = json1_data['data']['id']
-        return jsontest
+        req.add_header('Authorization', 'Client-ID ' + clientID)
+        response = urllib2.urlopen(req)
+        response = json.loads(response.read())
+        return str(response[u'data'][u'link'])
+
+
+
+
+
 
 
 def newobject():
