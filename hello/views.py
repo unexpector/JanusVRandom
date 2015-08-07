@@ -36,7 +36,7 @@ def index(request):
     object_three.randcords()
 
     jsontest = []
-    imgur1 = imgur(imgurone)
+    imgur1 = imgur('imgurone')
     imgurone.takeinput(jsontest)
 
 
