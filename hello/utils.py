@@ -51,11 +51,12 @@ class imgur(object):
     self.name = name
 
 
-    def takeinput(self):
+    def takeinput(self,jsontest):
         json1_file = open('https://api.imgur.com/3/gallery/random/random/1')
         json1_str = json1_file.read()
         json1_data = json.loads(json1_str)[0]
-        return  json1_data['data']['id']
+        jsontest = json1_data['data']['id']
+        return jsontest
 
 
 def newobject():

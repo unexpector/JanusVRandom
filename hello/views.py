@@ -36,9 +36,10 @@ def index(request):
     object_three = makeobject('object_three')
     object_three.randcords()
 
+    jsontest = []
     imgur1 = imgur(imgurone)
-    imgurone.takeinput()
-    
+    imgurone.takeinput(jsontest)
+
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
     context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'one_xvalue': object_one.newobjx, 'one_yvalue': object_one.newobjy, 'one_zvalue': object_one.newobjz}
