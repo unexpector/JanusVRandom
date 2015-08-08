@@ -48,9 +48,9 @@ class imgur(object):
 
 
     def takeinput(self):
-        clientid = 9aa094141cc554a
+        clientID = '9aa094141cc554a'
         req = urllib2.urlopen('https://api.imgur.com/3/gallery/random/random/1')
-        req.add_header('Authorization', 'Client-ID ' + clientid)
+        req.add_header('Authorization', 'Client-ID ' + clientID)
         response = urllib2.urlopen(req)
         response = json.loads(response.read())
         return str(response[u'data'][u'link'])

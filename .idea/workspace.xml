@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ea22325-213f-400e-a9ae-ff9626f7e04d" name="Default" comment="" />
+    <list default="true" id="7ea22325-213f-400e-a9ae-ff9626f7e04d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello/utils.py" afterPath="$PROJECT_DIR$/hello/utils.py" />
+    </list>
     <ignored path="JanusVRandom.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +29,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.76" vertical-offset="102" max-vertical-offset="2108">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2108">
               <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -39,7 +41,7 @@
       <file leaf-file-name="unexpector-template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769" vertical-offset="289" max-vertical-offset="1309">
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1309">
               <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
@@ -429,7 +431,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -865,7 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/templates/unexpector-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="289" max-vertical-offset="1309">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1309">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
@@ -873,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.76" vertical-offset="102" max-vertical-offset="2108">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2108">
           <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
