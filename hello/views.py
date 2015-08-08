@@ -42,7 +42,7 @@ def index(request):
 
 
     themodel = ObjectLibrary.objects.get(objectname=random_model).src
-    context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'one_xvalue': object_one.newobjx, 'one_yvalue': object_one.newobjy, 'one_zvalue': object_one.newobjz, 'jsontest': jsontest}
+    context_dict = {'boldmessage': object_one.newobjx, 'randomreddit': randomreddit, 'randomwikipedia': randomwikipedia, 'thenumber': thenumber, 'themodel': themodel, 'wikipediaid': wikipedia_id, 'realrandom': fullrandom, 'randomroom': random_room, 'one_xvalue': object_one.newobjx, 'one_yvalue': object_one.newobjy, 'one_zvalue': object_one.newobjz}
     context_dict['page_name'] = "this is the page name"
     #context_dict.update({'newvalue': thecube.newobjx})
     object_one.addtodict(context_dict)
