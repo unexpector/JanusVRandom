@@ -36,8 +36,8 @@ def index(request):
     object_three.randcords()
 
 
-    imgurone = imgur('imgurone')
-    imgurone.takeinput()
+    #imgurone = imgur('imgurone')
+    #imgurone.takeinput()
 
 
 
